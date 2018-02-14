@@ -23,6 +23,8 @@
   </a>
 </div>
 
+<br />
+
 
 Use an event-based api similar to [choo](https://github.com/choojs/choo)'s to manage shared state in your Angular.js 1.x app.
 
