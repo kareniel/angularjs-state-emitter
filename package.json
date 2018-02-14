@@ -1,0 +1,36 @@
+{
+  "name": "angularjs-state-emitter",
+  "version": "1.0.0",
+  "description": "modify shared state through an message bus",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kareniel/angularjs-state-emitter.git"
+  },
+  "keywords": [
+    "angularjs",
+    "state",
+    "store",
+    "redux",
+    "reducer",
+    "emitter",
+    "emit",
+    "event",
+    "events",
+    "choo",
+    "choojs",
+    "nanobus"
+  ],
+  "author": "kareniel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kareniel/angularjs-state-emitter/issues"
+  },
+  "homepage": "https://github.com/kareniel/angularjs-state-emitter#readme",
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
