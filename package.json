@@ -1,6 +1,6 @@
 {
   "name": "angularjs-state-emitter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "modify shared state through an message bus",
   "main": "index.js",
   "scripts": {

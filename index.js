@@ -2,7 +2,6 @@ var angular = require('angular')
 var nanobus = require('nanobus')
 
 var emitter = nanobus()
-var state = {}
 
 run.$inject = ['$rootScope']
 
@@ -14,15 +13,23 @@ module.exports = angular.module('angularjs-state-emitter', [])
   .name
 
 function StateProvider () {
-  this.$get = () => state
+  var state = {}
+
+  this.$get = function () {
+    return state
+  }
 }
 
 function EmitterProvider () {
-  this.$get = () => emitter
+  this.$get = function () {
+    return emitter
+  }
 }
 
 function EmitProvider () {
-  this.$get = () => emitter.emit.bind(emitter)
+  this.$get = function () {
+    return emitter.emit.bind(emitter)
+  }
 }
 
 function run ($rootScope) {
