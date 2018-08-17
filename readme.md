@@ -74,7 +74,7 @@ it also works with `@ui-router/angularjs`:
 $stateProvider.state({
   name: 'layout',
   component: 'myComponent',
-})
+});
 ```
 
 ```html
@@ -100,12 +100,25 @@ module.exports = {
 }
 ```
 
+
 ## Installation
 
 
 ```bash
 npm install angularjs-state-emitter
 ```
+
+
+## Logging
+
+Enable logging through the `$stateEmitterProvider` in a config block:
+
+```js
+function myConfig ($stateEmitterProvider) {
+  $stateEmitterProvider.debug(true)
+}
+```
+
 
 
 ## See also
